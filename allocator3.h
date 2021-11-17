@@ -171,7 +171,7 @@ struct t_allocator {
         std::cout << __PRETTY_FUNCTION__ << std::endl;
 #endif
         new(p) U(std::forward<Args>(args)...);
-    };
+    }
 
     void destroy(T *p) {
 #ifndef USE_PRETTY

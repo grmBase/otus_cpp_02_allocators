@@ -31,7 +31,7 @@ int TWorkObj::task1()
   }
 
   return 0;
-};
+}
 
 
 
@@ -49,4 +49,4 @@ int TWorkObj::task2()
   }
 
   return 0;
-};
+}
