@@ -13,7 +13,7 @@ class TWorkObj
 
 
     template <typename _Tx>
-    void process(_Tx& aMap)
+    void process_map(_Tx& aMap)
     {
       for(size_t i = 0; i < 10; ++i) {
         aMap[i] = factorial(i);
@@ -31,6 +31,24 @@ class TWorkObj
 
 
     int task2();
+
+
+    template <typename _Tx>
+    void process_my_cntr(_Tx& a_my_cntr)
+    {
+      for (size_t i = 0; i < 10; ++i) {
+        a_my_cntr.push_front(i);
+      }
+
+      std::cout << "filling completed" << std::endl;
+
+      for (const auto& p : a_my_cntr) {
+        std::cout << p << '\n';
+      }
+
+      std::cout << "printing completed" << std::endl;
+    };
+
 
 };
 //---------------------------------------------------------------------------

@@ -20,6 +20,12 @@ int main(int, const char* [])
       return nResult;
     }
 
+
+    nResult = workObj.task2();
+    if (nResult) {
+      std::cout << "Error in task2(), code: " << nResult << std::endl;
+      return nResult;
+    }
   }
   catch(const std::exception& exc)
   {

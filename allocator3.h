@@ -51,6 +51,10 @@ struct t_allocator {
         for (size_t i = 0; i < m_unMax; ++i) {
           std::cout << std::setw(2) << (unsigned)(m_pPoll[i]) << " ";
         }
+
+        // восстановим десятичный формат вывода для int-ов
+        std::cout << std::dec;
+
         std::cout << std::endl;
 
         std::cout << "<< before delete poll. ptr: " << (void*)m_pPoll << std::endl;
