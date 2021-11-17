@@ -13,16 +13,6 @@
 //------------------------------
 
 
-// todo: переделать на шаблоны? или на массив, чтобы было чуть пооптимальнее?
-size_t factorial(size_t anArg)
-{
-  if (anArg <= 1)
-    return 1;
-  
-  return anArg * factorial(anArg - 1);
-}
-
-
 int TWorkObj::task1()
 {
 

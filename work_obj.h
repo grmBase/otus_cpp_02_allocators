@@ -5,6 +5,13 @@
 #include <string>
 //---------------------------------------------------------------------------
 
+
+
+
+
+
+
+
 class TWorkObj
 {
   public:
@@ -26,7 +33,7 @@ class TWorkObj
       }
       std::cout << std::endl << "printing completed" << std::endl;
 
-    };
+    }
 
 
 
@@ -47,7 +54,18 @@ class TWorkObj
       }
 
       std::cout << "printing completed" << std::endl;
-    };
+    }
+
+
+private:
+  // todo: переделать на шаблоны? или на массив, чтобы было чуть пооптимальнее?
+  size_t factorial(size_t anArg)
+  {
+    if (anArg <= 1)
+      return 1;
+
+    return anArg * factorial(anArg - 1);
+  }
 
 
 };
