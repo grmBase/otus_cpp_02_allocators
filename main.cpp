@@ -10,9 +10,8 @@ int main(int, const char* [])
 
   TWorkObj workObj;
 
-
-  try {
-
+  try 
+  {
 
     int nResult = workObj.task1();
     if(nResult) {
@@ -30,6 +29,7 @@ int main(int, const char* [])
   catch(const std::exception& exc)
   {
     std::cout << "Exception caught. Info: " << exc.what() << std::endl;
+    return -33;
   }
 
   return 0;
